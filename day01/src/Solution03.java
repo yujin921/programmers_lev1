@@ -1,5 +1,4 @@
-package level01.day01;
-class Solution03 {
+class Solution {
     public String solution(String s) {
         String answer = "";
         int length = s.length();

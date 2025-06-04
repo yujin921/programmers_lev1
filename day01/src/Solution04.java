@@ -1,4 +1,3 @@
-package level01.day01;
 import java.util.*;
 
 public class Solution04 {

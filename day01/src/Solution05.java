@@ -1,9 +1,8 @@
-package level01.day01;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution05 {
+class Solution {
     public int[] solution(int[] arr, int divisor) {
         
         List<Integer> list = new ArrayList<>(); 
