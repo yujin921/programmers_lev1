@@ -1,4 +1,5 @@
-class Solution {
+package level01.day01;
+class Solution02 {
     public String solution(int a, int b) {
         String answer = "";
         String[] week = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"};

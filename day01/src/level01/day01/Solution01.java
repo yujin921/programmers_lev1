@@ -1,4 +1,6 @@
-class Solution {
+package level01.day01;
+
+class Solution01 {
     public int solution(int[] nums) {
         int answer = 0; // 종류의 갯수
         int pick = nums.length / 2; // 뽑아야 하는 폰켓몬 수
