@@ -1,16 +1,16 @@
-import java.util.Arrays;
-import java.util.Comparator;
-
 class Solution {
-    public String[] solution(String[] strings, int n) {
-        Arrays.sort(strings, new Comparator<String>() {
-            public int compare(String s1, String s2) {
-                if (s1.charAt(n) == s2.charAt(n)) {
-                    return s1.compareTo(s2); // 사전순 정렬
-                }
-                return s1.charAt(n) - s2.charAt(n); // n번째 문자 기준 정렬
-            }
-        });
-        return strings;
+    public String solution(int a, int b) {
+        String answer = "";
+        String[] week = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"};
+        
+        int[] monthdays = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        int totalDays = 0;
+        for(int i=0; i<a-1;i++){ //전월달까지 더하기기
+            totalDays += monthdays[i];
+        }
+        totalDays += b -1; //이번달 날짜 더하기 이때 -1을 하는 이유는 1일이 시작이기 때문에
+        answer = week[totalDays % 7]; //요일 계산
+        return answer;
     }
 }
